@@ -42,10 +42,19 @@ Open `http://localhost:3000`.
 npm run test
 npm run lint
 npm run build
-npm run start
 ```
 
+The production build creates a static `out/` folder. Upload the contents of `out/` to a static hosting provider such as Hostinger shared hosting.
+
 ## Deployment
+
+### Hostinger Static Hosting
+
+1. Run `npm install`.
+2. Run `npm run build`.
+3. Open the generated `out/` folder.
+4. Upload the contents of `out/` into Hostinger's `public_html` folder.
+5. Make sure `index.html`, `_next/`, and `assets/` are directly inside `public_html`.
 
 ### Vercel
 
@@ -53,21 +62,20 @@ npm run start
 2. Import the repo in Vercel.
 3. Use the default Next.js framework settings.
 4. Build command: `npm run build`
-5. Output directory: `.next`
+5. Output directory: `out`
 
 ### Netlify
 
 1. Connect the Git repository in Netlify.
 2. Build command: `npm run build`
-3. Publish directory: `.next`
-4. Install the Netlify Next.js runtime if Netlify does not auto-detect it.
+3. Publish directory: `out`
 
 ### AWS Amplify
 
 1. Connect the Git repository in AWS Amplify Hosting.
-2. Use the Next.js SSR hosting preset.
+2. Use static site hosting.
 3. Build command: `npm run build`
-4. Artifacts directory: `.next`
+4. Artifacts directory: `out`
 5. Add environment variables only if future integrations require them.
 
 ## SEO Checklist
