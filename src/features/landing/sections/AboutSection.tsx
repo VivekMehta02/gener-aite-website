@@ -1,8 +1,8 @@
-import { Container } from "@/components/Container";
-import { Reveal } from "@/components/Reveal";
-import { SectionHeading } from "@/components/SectionHeading";
-import { SlideVisual } from "@/components/SlideVisual";
-import { values } from "@/lib/site-data";
+import { Container } from "@/components/layout/Container";
+import { Reveal } from "@/components/ui/Reveal";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { SlideVisual } from "@/components/ui/SlideVisual";
+import { values } from "@/config/site";
 
 export function AboutSection() {
   return (

@@ -1,9 +1,9 @@
 import { Mail, MapPin, MousePointerClick, PhoneCall } from "lucide-react";
-import { Container } from "@/components/Container";
-import { MagneticButton } from "@/components/MagneticButton";
-import { Reveal } from "@/components/Reveal";
-import { SlideVisual } from "@/components/SlideVisual";
-import { contact, finalCta, navigationItems } from "@/lib/site-data";
+import { Container } from "@/components/layout/Container";
+import { MagneticButton } from "@/components/ui/MagneticButton";
+import { Reveal } from "@/components/ui/Reveal";
+import { SlideVisual } from "@/components/ui/SlideVisual";
+import { contact, finalCta, navigationItems } from "@/config/site";
 
 export function ContactSection() {
   return (

@@ -1,8 +1,8 @@
-import { Container } from "@/components/Container";
-import { Reveal } from "@/components/Reveal";
-import { SectionHeading } from "@/components/SectionHeading";
-import { SlideVisual } from "@/components/SlideVisual";
-import { whyGenerAiteReasons } from "@/lib/site-data";
+import { Container } from "@/components/layout/Container";
+import { Reveal } from "@/components/ui/Reveal";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { SlideVisual } from "@/components/ui/SlideVisual";
+import { whyGenerAiteReasons } from "@/config/site";
 
 export function WhyGenerAiteSection() {
   return (

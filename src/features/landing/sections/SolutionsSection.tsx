@@ -1,8 +1,8 @@
-import { Container } from "@/components/Container";
-import { Reveal } from "@/components/Reveal";
-import { SectionHeading } from "@/components/SectionHeading";
-import { SolutionCard } from "@/components/SolutionCard";
-import { solutions } from "@/lib/site-data";
+import { Container } from "@/components/layout/Container";
+import { Reveal } from "@/components/ui/Reveal";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { SolutionCard } from "@/features/landing/components/SolutionCard";
+import { solutions } from "@/config/site";
 
 export function SolutionsSection() {
   return (

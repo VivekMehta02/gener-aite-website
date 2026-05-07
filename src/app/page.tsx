@@ -1,12 +1,12 @@
-import { AboutSection } from "@/sections/AboutSection";
-import { ContactSection } from "@/sections/ContactSection";
-import { HeroSection } from "@/sections/HeroSection";
-import { IndustriesSection } from "@/sections/IndustriesSection";
-import { ProcessSection } from "@/sections/ProcessSection";
-import { ServicesSection } from "@/sections/ServicesSection";
-import { SolutionsSection } from "@/sections/SolutionsSection";
-import { WhyGenerAiteSection } from "@/sections/WhyGenerAiteSection";
-import { WhyNowSection } from "@/sections/WhyNowSection";
+import { AboutSection } from "@/features/landing/sections/AboutSection";
+import { ContactSection } from "@/features/landing/sections/ContactSection";
+import { HeroSection } from "@/features/landing/sections/HeroSection";
+import { IndustriesSection } from "@/features/landing/sections/IndustriesSection";
+import { ProcessSection } from "@/features/landing/sections/ProcessSection";
+import { ServicesSection } from "@/features/landing/sections/ServicesSection";
+import { SolutionsSection } from "@/features/landing/sections/SolutionsSection";
+import { WhyGenerAiteSection } from "@/features/landing/sections/WhyGenerAiteSection";
+import { WhyNowSection } from "@/features/landing/sections/WhyNowSection";
 
 const structuredData = {
   "@context": "https://schema.org",

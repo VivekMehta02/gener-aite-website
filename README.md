@@ -17,10 +17,11 @@ The site is not a slide viewer. It converts the PPT into real website sections w
 ## Project Structure
 
 ```text
-app/                  Next.js app entry, metadata, global styles
-components/           Reusable UI and animation components
-sections/             Page sections mapped from PPT content
-lib/                  Typed site content and utilities
+src/app/              Next.js App Router entry, metadata, global styles
+src/components/       Shared layout and UI primitives
+src/features/landing/ Landing page sections and feature-specific components
+src/config/           Typed site content and PPT-to-section mappings
+src/lib/              Shared utilities
 public/assets/        Extracted PPT slide assets and optimized web variants
 tests/                Vitest coverage for structured site data
 docs/superpowers/     Implementation planning notes
@@ -72,8 +73,8 @@ npm run start
 ## SEO Checklist
 
 - Semantic sections with one primary `h1`.
-- Metadata and Open Graph image configured in `app/layout.tsx`.
-- Organization JSON-LD included in `app/page.tsx`.
+- Metadata and Open Graph image configured in `src/app/layout.tsx`.
+- Organization JSON-LD included in `src/app/page.tsx`.
 - All major PPT solution categories rendered as HTML text.
 - CTA links use real `mailto:` and website URLs.
 - Images include descriptive alt text.

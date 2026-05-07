@@ -1,7 +1,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import { contact, navigationItems, services, solutions, values } from "@/lib/site-data";
+import { contact, navigationItems, services, solutions, values } from "@/config/site";
 
 describe("site data", () => {
   it("covers the major PPT solution categories", () => {
@@ -49,17 +49,20 @@ describe("site data", () => {
   });
 
   it("keeps the important PPT narrative slides represented once in sections", () => {
-    const aboutSection = readFileSync(join(process.cwd(), "sections", "AboutSection.tsx"), "utf8");
+    const aboutSection = readFileSync(
+      join(process.cwd(), "src", "features", "landing", "sections", "AboutSection.tsx"),
+      "utf8"
+    );
     const whySection = readFileSync(
-      join(process.cwd(), "sections", "WhyGenerAiteSection.tsx"),
+      join(process.cwd(), "src", "features", "landing", "sections", "WhyGenerAiteSection.tsx"),
       "utf8"
     );
     const servicesSection = readFileSync(
-      join(process.cwd(), "sections", "ServicesSection.tsx"),
+      join(process.cwd(), "src", "features", "landing", "sections", "ServicesSection.tsx"),
       "utf8"
     );
     const processSection = readFileSync(
-      join(process.cwd(), "sections", "ProcessSection.tsx"),
+      join(process.cwd(), "src", "features", "landing", "sections", "ProcessSection.tsx"),
       "utf8"
     );
 

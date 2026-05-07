@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
-import { Container } from "@/components/Container";
-import { MagneticButton } from "@/components/MagneticButton";
-import { contact, navigationItems } from "@/lib/site-data";
+import { Container } from "@/components/layout/Container";
+import { MagneticButton } from "@/components/ui/MagneticButton";
+import { contact, navigationItems } from "@/config/site";
 
 export function HeroSection() {
   return (

@@ -4,7 +4,7 @@
 
 **Goal:** Convert `light profile (1).pptx` into a modern, responsive, production-ready GenerAite landing website that visually matches the PPT.
 
-**Architecture:** Build a single Next.js App Router page using structured content from `lib/site-data.ts`, reusable presentation components, and section modules under `sections/`. Use extracted PPT slide images as brand-faithful visual anchors while rendering all important copy as semantic HTML.
+**Architecture:** Build a single Next.js App Router page using structured content from `src/config/site.ts`, reusable presentation components, and landing modules under `src/features/landing/`. Use extracted PPT slide images as brand-faithful visual anchors while rendering all important copy as semantic HTML.
 
 **Tech Stack:** Next.js latest, React latest, TypeScript, Tailwind CSS, Framer Motion, Lucide React, Vitest, Testing Library.
 
@@ -18,9 +18,9 @@
 - Create: `next.config.mjs`
 - Create: `postcss.config.mjs`
 - Create: `tailwind.config.ts`
-- Create: `app/layout.tsx`
-- Create: `app/page.tsx`
-- Create: `app/globals.css`
+- Create: `src/app/layout.tsx`
+- Create: `src/app/page.tsx`
+- Create: `src/app/globals.css`
 
 - [ ] Add dependencies and scripts for `dev`, `build`, `start`, `lint`, and `test`.
 - [ ] Configure Tailwind design tokens for GenerAite teal, navy, cyan, white, and rose accent.
@@ -39,7 +39,7 @@
 ### Task 3: Content Model
 
 **Files:**
-- Create: `lib/site-data.ts`
+- Create: `src/config/site.ts`
 - Test: `tests/site-data.test.ts`
 
 - [ ] Write tests that prove the content model includes required website sections, clickable CTA URLs, and all major PPT solution categories.
@@ -48,12 +48,12 @@
 ### Task 4: Components
 
 **Files:**
-- Create: `components/Container.tsx`
-- Create: `components/SectionHeading.tsx`
-- Create: `components/Reveal.tsx`
-- Create: `components/MagneticButton.tsx`
-- Create: `components/SlideVisual.tsx`
-- Create: `components/SolutionCard.tsx`
+- Create: `src/components/layout/Container.tsx`
+- Create: `src/components/ui/SectionHeading.tsx`
+- Create: `src/components/ui/Reveal.tsx`
+- Create: `src/components/ui/MagneticButton.tsx`
+- Create: `src/components/ui/SlideVisual.tsx`
+- Create: `src/features/landing/components/SolutionCard.tsx`
 
 - [ ] Build reusable layout, animation, CTA, and visual components.
 - [ ] Keep animations subtle and Framer Motion-based.
@@ -62,8 +62,8 @@
 ### Task 5: Sections
 
 **Files:**
-- Create: section files under `sections/`
-- Modify: `app/page.tsx`
+- Create: section files under `src/features/landing/sections/`
+- Modify: `src/app/page.tsx`
 
 - [ ] Build hero, about, services, solutions, process, industries, why-now, and contact/footer sections.
 - [ ] Match the PPT’s visual language: teal bars, diagonal accents, dashboard imagery, white panels, compact corporate density.
